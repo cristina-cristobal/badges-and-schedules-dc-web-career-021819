@@ -11,7 +11,7 @@ def batch_badge_creator(array)
   badge_messages
 end
 
-def assign_rooms(speaker)
+def assign_rooms(speakers)
   room_number = 1
   room_messages = []
   speakers.each do |speaker|
@@ -19,4 +19,9 @@ def assign_rooms(speaker)
     room_number += 1
   end
     room_messages
+end
+
+def printer
+  batch_badge_creator(array)
+  assign_rooms(speaker)
 end
